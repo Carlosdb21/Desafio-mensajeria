@@ -6,23 +6,25 @@
 
 body {
     display: flex;
-
+    font-family: "Roboto", "open sans regular", sans-serif;
+    font-weight: bold;
 }
 
 .boxes {
     display: flex;
     flex-direction: column;
-    min-width: 20vw;
-    min-height: 100vh;
-    border: solid 1px grey;
-    background-color: aqua
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    border: solid 1px rgb(232, 235, 228, 0.5);
+
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: solid 1px grey;
+    border: solid 1px rgb(232, 235, 228, 0.5);
     padding: 15px;
 
 }
@@ -43,6 +45,11 @@ nav img {
     gap: 20px
 }
 
+.textmenu {
+    font-size: 15px;
+    color: rgb(128, 128, 128, 0.5);
+}
+
 .menu-right {
     display: flex;
     justify-content: center;
@@ -60,70 +67,111 @@ nav img {
     justify-content: center;
     justify-items: center;
     padding: 40px;
-    border: solid 1px grey;
+    border: solid 1px rgb(232, 235, 228, 0.5);
 
 }
 
-
-
 .boton {
-    background-color: #a491d2;
-    height: 60px;
-    width: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 40px;
+    width: 80%;
+    height: 80%;
     border-radius: 2%;
+    background-color: #A491D2;
     cursor: pointer;
-
-}
-
-.boton a {
+    font-size: larger;
     color: white;
-    text-decoration: none;
 }
 
-.boton a:hover {
-    color: black;
+button:hover {
+    background-color: rgb(164, 145, 210, 0.7);
+    color: rgba(255, 255, 255, 0.5);
 }
+
+button:focus {
+    background-color: #BEC1BB;
+}
+
 
 .chats {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
 
 }
+
 
 .cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    border: 1px solid gray;
+    border: 1px solid rgb(232, 235, 228, 0.5);
     padding: 1em;
-    width: 100%25vw;
+    flex-basis: 100%;
+
 }
 
-/*.centrar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-
-}*/
-
-.settingscards {
-    display: flex;
-    flex-direction: column;
-
+.namecards {
+    font-size: medium;
 }
 
 .cards img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
-    border: solid rgb(128, 128, 128, 0.5);
+    border: 2px solid rgb(128, 128, 128, 0.3);
     border-radius: 50%;
+}
+
+.settingscards {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    padding-left: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 75%;
+    background-color: rgb(232, 235, 228, 0.5);
+}
+
+main img {
+
+    width: 300px;
+    height: 300px;
+}
+
+.alinear {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.center-text-logo {
+    text-align: center;
+    padding: 2em;
+}
+
+.tittle-logo {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.text-logo {
+
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.resalta {
+    font-weight: bold;
+    padding: 5px;
 }
