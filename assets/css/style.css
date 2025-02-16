@@ -8,6 +8,7 @@ body {
     display: flex;
     font-family: "Roboto", "open sans regular", sans-serif;
     font-weight: bold;
+    border: solid 1px rgb(232, 235, 228, 0.5)
 }
 
 .boxes {
